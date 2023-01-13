@@ -1,7 +1,7 @@
 # pycounts
 
 Calculate word counts in a text file
-
+ 
 ## Installation
 
 ```bash
