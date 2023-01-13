@@ -1,3 +1,24 @@
+"""Plot a bar chart of word counts.
+    
+    Parameters
+    ----------
+    word_counts : collections.Counter
+        Counter object of word counts.
+    n : int, optional
+        Plot the top n words. By default, 10.
+
+    Returns
+    -------
+    matplotlib.container.BarContainer
+        Bar chart of word counts.
+
+    Examples
+    --------
+    >>> from pycounts.pycounts import count_words
+    >>> from pycounts.plotting import plot_words
+    >>> counts = count_words("text.txt")
+    >>> plot_words(counts)
+    """
 from collections import Counter
 from string import punctuation
 
@@ -21,3 +42,4 @@ def count_words(input_file):
     text = clean_text(text)
     words = text.split()
     return Counter(words)
+
